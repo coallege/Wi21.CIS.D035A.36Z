@@ -1,3 +1,3 @@
 include ../Makefile
 
-entry := Driver
+entry := GenomeInput

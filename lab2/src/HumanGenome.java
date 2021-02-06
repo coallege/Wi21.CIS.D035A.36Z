@@ -16,12 +16,19 @@ class HumanGenome {
    void setChromoCount(final int count) { this.chromosomes = count; }
    void setCellCount(final long count) { this.cells = count; }
 
+   HumanGenome(String name, int genes, int chromosomes, long cells) {
+      this.name = name;
+      this.genes = genes;
+      this.chromosomes = chromosomes;
+      this.cells = cells;
+   }
+
    /**
     * Has to use printf. Why? Because we say so.
     */
    void print() {
       System.out.printf(
-         "name: %s\ngenes: %d\nchromosomes: %d\ncells: %l\n"
+         "name: %s\ngenes: %d\nchromosomes: %d\ncells: %d\n\n"
          ,this.name
          ,this.genes
          ,this.chromosomes
