@@ -6,7 +6,7 @@ interface GenomeInput {
    static void main(String[] __) {
       Stream
          .generate(GenomeInput::input)
-         .limit(2)
+         .limit(3)
          .collect(Collectors.toUnmodifiableList())
          .stream()
          .forEach(HumanGenome::print);
