@@ -134,6 +134,6 @@ class DNA {
          .mapToDouble(NucleicAcid::getDensity)
          .sum();
 
-         out.println("The total density of both strands is " + totalDensity);
+      out.println("The total density of both strands is " + totalDensity);
    }
 }
